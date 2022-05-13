@@ -1,7 +1,6 @@
-using System; 
+using System;
 class Program {
-
   public static void Main() {
-    Console.WriteLine("hello world");
+    Console.WriteLine("Olá mundo");
   }
 }

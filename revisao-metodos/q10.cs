@@ -1,21 +1,21 @@
-using System; 
-
-public class Program {
-public static string Vogais(string s){
-  int z = -1;
-  int a = s.Length;
-  int b = 0;
-  while(b<=a){
-    ;
-    b++;
+using System;
+public class Program{
+  public static void Main(string[] args){
+    string texto = Console.ReadLine();
+    Console.WriteLine(Vogais(texto));
   }
- return z;
-  }
+  public static string Vogais(string s){
+    int x = 0;
+    string s2 = "";
+    string[] s3 = s.Split();
+    foreach (string p in s3){
+      x = p.Length;
+      for(int i = 0; i < x; i++){
+        if(p[i] == 'a' || p[i] == 'e' || p[i] == 'i' || p[i] == 'o' || p[i] == 'u' || p[i]         == 'A' || p[i] == 'E' || p[i] == 'I' || p[i] == 'O' || p[i] == 'U') s2 += p[i];
+      }
+      s2 += " ";
+    }
     
-  public static void Main(string[] args) {
-    Console.WriteLine("Escreva dois numeros:");
-    string s = Console.ReadLine();
-    Console.WriteLine(Vogais(s));
-  
+    return s2;
   }
 }
